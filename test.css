@@ -1,1 +1,11 @@
 /* random text */
+* {
+    box-sizing: border-box;
+    font-size: larger;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+body {
+    background-color:black; 
+}
