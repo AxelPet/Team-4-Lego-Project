@@ -1,5 +1,5 @@
-# HTML files should be reviewed by AxelPet
-*.html    @axelpet
+# XML files should be reviewed by AxelPet
+*.xml    @axelpet
 
 
 # CSS files should be reviewed by Sebastian
