@@ -1,1 +1,18 @@
-*.html AxelPet
+# HTML files should be reviewed by AxelPet
+*.html    @axelpet
+
+
+# CSS files should be reviewed by Sebastian
+*.css     @sebastian
+
+
+
+# JavaScript files should be reviewed by YasmineBrahimi
+*.js      @yasminebrahimi
+
+
+# PHP files should be reviewed by Rebepekka
+*.php     @rebepekka
+
+
+
