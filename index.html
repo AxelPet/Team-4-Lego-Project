@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EV3 Robot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container" id="robotContainer">
+        <section class="team-info" id="teamInfo">
+            <h1>EV3 Robot</h1>
+            <p>
+                Team 4 Members:<br>
+                Rebekka Kankaanpää<br>
+                Yasmin Ebrahimi<br>
+                Axel Petrelius<br>
+                Sebastian Weckström
+            </p>
+        </section>
+       
+        <section class="input-section" id="inputSection">
+            <h2 class="input-title">Start with adding new values</h2>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="id">Id:</label>
+                        <input type="text" id="id" name="user_id" class="input-field" />
+                    </li>
+                    <li>
+                        <label for="speed">Speed:</label>
+                        <input type="number" id="speed" name="user_speed" class="input-field" />
+                    </li>
+                    <li>
+                        <label for="direction">Direction:</label>
+                        <select id="direction" name="user_direction" class="input-field">
+                            <option value="forward">Forward</option>
+                            <option value="backward">Backward</option>
+                        </select>
+                    </li>
+                    <button type="submit" class="submit-button">Go!</button>
+                </ul>
+            </form>
+        </section>
+
+        <section class="control-buttons" id="controlButtons">
+            <h1>Start or Stop the Robot</h1>
+            <button id="startButton" class="start-button">Start</button>
+            <button id="stopButton" class="stop-button">Stop</button>
+        </section>
+
+        <section class="data-display" id="dataDisplay">
+            <h1 class="data-title">See the data here</h1>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="timeSpent">Time Spent:</label>
+                        <input type="number" id="timeSpent" name="time_spent" class="input-field" />
+                    </li>
+                    <li>
+                        <label for="example1">Example 1:</label>
+                        <input type="number" id="example1" name="example_1" class="input-field" />
+                    </li>
+                    <li>
+                        <label for="example2">Example 2:</label>
+                        <input type="number" id="example2" name="example_2" class="input-field" />
+                    </li>
+                </ul>
+            </form>
+        </section>
+    </div>
+    
+</body>
+</html>

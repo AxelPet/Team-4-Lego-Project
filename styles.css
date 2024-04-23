@@ -1,0 +1,106 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.team-info {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.control-buttons {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.start-button,
+.stop-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.stop-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.data-display {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.input-field,
+.start-button,
+.stop-button {
+    transition: background-color 0.3s ease;
+}
+
+.input-field:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+
+.input-title{
+    text-align: center;
+}
+
+.data-title{
+    text-align: center;
+}
