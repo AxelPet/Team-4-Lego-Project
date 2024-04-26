@@ -16,7 +16,7 @@
                 Rebekka Kankaanpää<br>
                 Yasmin Ebrahimi<br>
                 Axel Petrelius<br>
-                Sebastian Weckström
+               
             </p>
         </section>
        
@@ -70,6 +70,40 @@
             </form>
         </section>
     </div>
-    
+     <script>
+        document.getElementById("submitButton").addEventListener("click", function() {
+            var formData = new FormData(document.getElementById("dataForm"));
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/robot/data", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById("status").innerText = xhr.responseText;
+                }
+            };
+            xhr.send(formData);
+        });
+
+        document.getElementById("startButton").addEventListener("click", function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/robot/start", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById("status").innerText = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
+
+        document.getElementById("stopButton").addEventListener("click", function() {
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/robot/stop", true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    document.getElementById("status").innerText = xhr.responseText;
+                }
+            };
+            xhr.send();
+        });
+    </script>
 </body>
 </html>
