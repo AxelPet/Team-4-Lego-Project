@@ -12,7 +12,7 @@ RoboModel> dataList;
 // Luo uuden robopalvelun ja alusta data
 public Robo() {
     dataList = new ArrayList<>();
-    dataList.add(new RoboModel("north", 0)); // Esimerkkidata, oletetaan että aluksi robotti on pohjoiseen päin ja nopeus on 0
+    dataList.add(new RoboModel("forward", 0)); // Esimerkkidata, oletetaan että aluksi robotti on eteen päin ja nopeus on 0
 }
 
 // Metodi hakee kaiken datan
